@@ -1,0 +1,10 @@
+[Unit]
+Description=Remove BitTorrent Sync trashed files once a day
+StopWhenUnneeded=true
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=1d
+
+[Install]
+WantedBy=timers.target

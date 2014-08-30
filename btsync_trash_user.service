@@ -1,0 +1,8 @@
+[Unit]
+Description=Remove BitTorrent Sync trashed files
+
+[Service]
+Nice=19
+IOSchedulingClass=2
+IOSchedulingPriority=7
+ExecStart=/usr/bin/btsync_trash.py --config %h/.config/btsync/btsync.conf
